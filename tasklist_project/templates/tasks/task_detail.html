@@ -1,0 +1,10 @@
+<h1>Task Details</h1>
+
+<p>Task Title: {{ object.title }}</p >
+<p>Task Description: {{ object.description }}</p>
+<p>Task Priority: {{ object.priority }}</p>
+<p>Task Location: {{ object.location }}</p>
+<p>Task Organizer: {{ object.organizer }}</p>
+
+<a href="{% url 'update_task' object.pk %}" class="btn btn-primary">Edit</a>
+<a href="{% url 'delete_task' object.pk %}" class="btn btn-danger">Delete</a>
